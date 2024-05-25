@@ -8,7 +8,7 @@ import reactjs from "../assets/images/svg/reactjs.svg";
 import github from "../assets/images/svg/github.svg";
 import nodejs from "../assets/images/svg/nodejs.svg";
 import firebase from "../assets/images/svg/firebase.svg";
-
+import lappy_man from "../assets/images/png/lappy_man.png";
 
 import { Link } from "react-router-dom";
 import ProjectSlider from "../Components/ProjectSlider";
@@ -30,7 +30,7 @@ const Home = () => {
       <Navbar />
 
       {/* Hero section */}
-    <section>
+      <section>
         <div className="hero  pt-5 ">
           <div className=""></div>
           <div className="background pt-5 ">
@@ -41,7 +41,7 @@ const Home = () => {
                     <h3 className="fs_2xl ff_Outfit">
                       Full-Stack Mobile App Developer
                     </h3>
-             
+
                     <h1 className="fs_3xl ff_Uncial">Joginder Saini</h1>
                     <p>
                       I'm Joginder Saini, a full-stack mobile app developer
@@ -151,7 +151,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </section> 
+      </section>
 
       {/* About me section */}
       {/* <section className="bg_primary">
@@ -261,7 +261,7 @@ const Home = () => {
       </section> */}
 
       {/* project section */}
-      {/* <section>
+      <section>
         <div className="bg_primary">
           <div className="myContainer my_120">
             <div className="w_max_500_auto  text-center">
@@ -275,7 +275,100 @@ const Home = () => {
             <ProjectSlider />
           </div>
         </div>
-      </section> */}
+      </section>
+
+      {/* contact us section */}
+
+      <section className="contact_sec">
+        <div className="container py-5">
+          <div className="row  justify-content-center align-items-center py-5">
+            <div className="col-5">
+              <div className="contact bg-light p-3 rounded-2">
+                <h4 className="text-danger fs_2xl fw-bold">
+                  Lets work togather!
+                </h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur. Ut sociis aenean
+                  aliquam elementum eget sit orci.
+                </p>
+                <form action="">
+                  <input
+                    className="rounded-2 py-2 ps-2 me-2 input_text fs_sm"
+                    placeholder="First name"
+                    type="text"
+                    name=""
+                    id=""
+                  />
+                  <input
+                    className="rounded-2 py-2 ps-2 input_text fs_sm"
+                    placeholder="Last name"
+                    type="text"
+                    name=""
+                    id=""
+                  />
+                  <input
+                    className="rounded-2 py-2 ps-2 me-2 input_text fs_sm"
+                    placeholder="Email Address"
+                    type="text"
+                    name=""
+                    id=""
+                  />
+                  <input
+                    className="rounded-2 py-2 ps-2 input_text fs_sm"
+                    placeholder="Phone Number"
+                    type="text"
+                    name=""
+                    id=""
+                  />
+                  <textarea
+                    className="w-100 rounded-2 py-2 ps-2 mb-2 fs_sm"
+                    placeholder="Message"
+                    rows="4"
+                    name=""
+                    id=""
+                  />
+                  <button className="header-btn ff_Outfit">Send Message</button>
+                </form>
+              </div>
+            </div>
+            <div className="col-7">
+              <div>
+                <div className="contact_right p-1 w-50">
+                  <h3 className="ff_Kaushan text-danger fs_2_5xl mb-4">
+                    Say Hello...
+                  </h3>
+                  <div className="">
+                    <p className="ff_Outfit">
+                      Connecting with new people is one of the best parts of my
+                      work. Use the form below to send me a message about
+                      anything on your mind—whether it’s a project idea, a
+                      question, or just a friendly hello. I'll be sure to get
+                      back to you soon.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="lappy_man">
+          <img src={lappy_man} alt="" />
+        </div>
+      </section>
+
+      {/* footer section */}
+
+      <section>
+        <div className="bg-dark">
+          <div className="container">
+            <div className="py-5">
+              <div className="text-white w-25 px-5 text-center mx-auto footer_name ">
+                <h2 className="ff_Uncial fs_2xl fw-normal">Joginder Saini</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };

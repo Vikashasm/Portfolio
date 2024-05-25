@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Uncial+Antiqua&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Uncial+Antiqua&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -17,6 +17,7 @@
   --fs_lg: 22px;
   --fs_xl: 24px;
   --fs_2xl: 32px;
+  --fs_2_5xl: 54px;
   --fs_3xl: 82px;
 }
 
@@ -49,6 +50,9 @@
   font-size: var(--fs_2xl);
 }
 
+.fs_2_5xl {
+  font-size: var(--fs_2_5xl);
+}
 .fs_3xl {
   font-size: var(--fs_3xl);
 }
@@ -62,6 +66,9 @@
 
 .ff_Outfit {
   font-family: "Outfit", sans-serif;
+}
+.ff_Kaushan {
+  font-family: "Kaushan Script", sans-serif;
 }
 
 .bg_btn {
@@ -276,14 +283,14 @@ width: 40%;
 
 
 
-/* .slick-slide > div {
+.slick-slide > div {
 
   margin: 0 10px;
 }
 .slick-list .slick-current {
  
   margin: 0 -10px;
-} */
+}
 
 
 
@@ -294,6 +301,29 @@ width: 40%;
 }
 .rounded_5{
   border-radius: 48px;
+}
+
+
+.contact_sec{
+  background-color: #F1F1F1;
+  position: relative;
+}
+
+.input_text{
+  width:49% ;
+  border: 1px solid grey;
+  margin-bottom:10px;
+}
+
+.lappy_man{
+  position: absolute;
+  bottom: 0;
+  right: 30px;
+}
+
+.footer_name{
+  border-right: 1px solid grey;
+  border-left: 1px solid grey;
 }
 
 @media (max-width:576px){
