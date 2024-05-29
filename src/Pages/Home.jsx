@@ -34,16 +34,21 @@ const Home = () => {
         <div className="hero  pt-5 ">
           <div className=""></div>
           <div className="background pt-5 ">
-            <div className="container pt-5 ">
-              <div className="d-flex flex-column-reverse flex-sm-row  justify-content-between ">
-                <div className="w-40 p-1 p-sm-5">
+            <div className="container pt-2 pt-lg-5 ">
+              <div className="d-flex flex-column-reverse flex-md-row align-items-center  justify-content-between ">
+                <div className="w-40 p-2 py-md-5 px-lg-5">
                   <div>
-                    <h3 className="fs_2xl ff_Outfit">
+                    <h3 className="fs_full_stack ff_Outfit text-center text-lg-start d-none d-md-block">
                       Full-Stack Mobile App Developer
                     </h3>
 
-                    <h1 className="fs_3xl ff_Uncial">Joginder Saini</h1>
-                    <p>
+                    <h1
+                      className="fs_3xl ff_Uncial text-center text-md-start d-none d-md-block"
+                      style={{ color: "#720000" }}
+                    >
+                      Joginder Saini
+                    </h1>
+                    <p className="text-center fs_lsm   text-md-start">
                       I'm Joginder Saini, a full-stack mobile app developer
                       passionate about crafting seamless digital experiences.
                       Specializing in JavaScript,React, React Native, Node.js,
@@ -53,17 +58,37 @@ const Home = () => {
                       solutions that elevate user experiences and drive business
                       success.
                     </p>
-                    <a href="https://wa.me/+919992510270">
+                    <a
+                      className="text-center text-md-start d-block d-lg-inline"
+                      href="https://wa.me/+919992510270"
+                    >
                       <button className="bg_btn main_btn fw-bold">
                         Book a Call
                       </button>
                     </a>
                   </div>
                 </div>
-                <div className="w-40  p-5">
-                  <div className="position-relative d-flex justify-content-center align-items-center  ">
-                    <img className="w-100 circle" src={circle} alt="" />
+                <div className="w-40  py-2 px-2 py-md-5 px-lg-5">
+                  <h3 className="fs_full_stack ff_Outfit text-center text-lg-start d-md-none">
+                    Full-Stack Mobile App Developer
+                  </h3>
 
+                  <h1
+                    className="fs_3xl ff_Uncial text-center text-lg-start    d-md-none"
+                    style={{ color: "#720000" }}
+                  >
+                    Joginder
+                  </h1>
+                  <h1
+                    className="fs_3xl ff_Uncial text-center text-lg-start mb-5  pb-5 d-md-none"
+                    style={{ color: "#720000" }}
+                  >
+                  Saini
+                  </h1>
+                  <div className="position-relative d-flex justify-content-center align-items-center  ">
+                    <div className="w-100 overflow-hidden">
+                      <img className="w-100 circle" src={circle} alt="" />
+                    </div>
                     <img className="w-100 person " src={person} alt="" />
                   </div>
                 </div>
@@ -154,29 +179,32 @@ const Home = () => {
       </section>
 
       {/* About me section */}
-      {/* <section className="bg_primary">
+      <section className="bg_primary">
         <div className="myContainer my_120">
-          <div className="row align-items-center">
-            <div className="col-5">
-              <div className="position-relative ">
-                <img src={user} alt="" />
-                <div className="user_lap py-3">
-                  <p className="text-secondary">Name</p>
+          <div className="row align-items-center  flex-column flex-md-row me-">
+            <div className="col-11 col-md-6  col-lg-5">
+              <div className="position-relative  ">
+                <div className="w_85">
+                  {" "}
+                  <img className="w-100" src={user} alt="" />
+                </div>
+                <div className="user_lap pb-sm-4 px-2 pb-3 px-sm-4  pt-3 pt-sm-4">
+                  <p className="text-secondary mb-2">Name</p>
                   <p className="details_p">Joginder Saini</p>
-                  <p className="text-secondary">Email</p>
+                  <p className="text-secondary mb-2">Email</p>
                   <p className="details_p">jogindersaini@gmail.com</p>
-                  <p className="text-secondary">Phone</p>
+                  <p className="text-secondary mb-2">Phone</p>
                   <p className="details_p">+91 8950402201</p>
                 </div>
               </div>
             </div>
-            <div className="col-7">
+            <div className="col-11 col-md-6 col-lg-7">
               <div className="">
-                <p className="text-white p-0">About me</p>
+                <p className="text-white p-0 mt-4 mt-md-0">About me</p>
                 <h2 className="fw-semibold fs_2xl user_lap_h1">
                   Architecting Digital Delights: Unleashing Full-Stack Magic
                 </h2>
-                <p className="text-white">
+                <p className="text-white fs_lsm">
                   Lorem ipsum dolor sit amet consectetur. Nibh porta sed
                   volutpat enim at ac pellentesque fringilla. Pharetra amet
                   dignissim placerat venenatis etiam diam. Accumsan commodo
@@ -190,10 +218,10 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </section> */}
+      </section>
 
       {/* Skill section */}
-      {/* <section>
+      <section>
         <div className="myContainer my_120">
           <div className="w_max_500_auto text-center">
             <h2 className="fs_2xl fw-semibold">My Skills</h2>
@@ -207,21 +235,21 @@ const Home = () => {
             {data.map((item, index) => {
               return (
                 <div
-                  className="col-6 col-sm-4 col-md-3 col-lg-2 py-4"
+                  className="col-6 col-sm-4 col-md-3 col-xl-2 py-4"
                   key={index}
                 >
-                  <div className="skills p-5 text-center rounded-3">
+                  <div className="skills px-5 py-3 py-sm-4 py-md-5 text-center rounded-3">
                     <div className="mb-4  ">
                       <img src={item.img} alt="" />
                     </div>
-                    <p>{item.title}</p>
+                    <p className="mb-0">{item.title}</p>
                   </div>
                 </div>
               );
             })}
           </div>
-          <div className="row">
-            <div className="col-4">
+          <div className="row  flex-column flex-md-row align-items-center justify-content-center">
+            <div className="col-10 col-md-6 col-lg-4">
               <div className="border rounded-3 p-4 text-center">
                 {" "}
                 <h4 className="skill_low_p">Fronend Development</h4>
@@ -233,7 +261,7 @@ const Home = () => {
                 </p>
               </div>
             </div>
-            <div className="col-4">
+            <div className="col-10 col-md-6 col-lg-4">
               <div className="border rounded-3 p-4 text-center">
                 {" "}
                 <h4 className="skill_low_p">Backend Development</h4>
@@ -245,7 +273,7 @@ const Home = () => {
                 </p>
               </div>
             </div>
-            <div className="col-4">
+            <div className="col-10 col-md-6 col-lg-4">
               <div className="border rounded-3 p-4 text-center">
                 <h4 className="skill_low_p">Project Testing</h4>
                 <p>
@@ -258,7 +286,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </section> */}
+      </section>
 
       {/* project section */}
       <section>
@@ -281,13 +309,13 @@ const Home = () => {
 
       <section className="contact_sec">
         <div className="container py-5">
-          <div className="row  justify-content-center align-items-center py-5">
-            <div className="col-5">
+          <div className="row  justify-content-center align-items-center flex-column flex-lg-row py-5">
+            <div className="col-11 col-lg-5">
               <div className="contact bg-light p-3 rounded-2">
                 <h4 className="text-danger fs_2xl fw-bold">
                   Lets work togather!
                 </h4>
-                <p>
+                <p className="fs_lsm">
                   Lorem ipsum dolor sit amet consectetur. Ut sociis aenean
                   aliquam elementum eget sit orci.
                 </p>
@@ -321,7 +349,7 @@ const Home = () => {
                     id=""
                   />
                   <textarea
-                    className="w-100 rounded-2 py-2 ps-2 mb-2 fs_sm"
+                    className=" rounded-2 py-2 ps-2 mb-2 fs_sm input_area"
                     placeholder="Message"
                     rows="4"
                     name=""
@@ -331,14 +359,14 @@ const Home = () => {
                 </form>
               </div>
             </div>
-            <div className="col-7">
+            <div className=" col-11 col-lg-7">
               <div>
-                <div className="contact_right p-1 w-50">
-                  <h3 className="ff_Kaushan text-danger fs_2_5xl mb-4">
+                <div className="contact_right p-1 ">
+                  <h3 className="ff_Kaushan text-danger fs_2_5xl my-4">
                     Say Hello...
                   </h3>
                   <div className="">
-                    <p className="ff_Outfit">
+                    <p className="ff_Outfit fs_lsm">
                       Connecting with new people is one of the best parts of my
                       work. Use the form below to send me a message about
                       anything on your mind—whether it’s a project idea, a
@@ -351,7 +379,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="lappy_man">
+        <div className="lappy_man d-none d-lg-block">
           <img src={lappy_man} alt="" />
         </div>
       </section>
@@ -361,9 +389,19 @@ const Home = () => {
       <section>
         <div className="bg-dark">
           <div className="container">
-            <div className="py-5">
-              <div className="text-white w-25 px-5 text-center mx-auto footer_name ">
+            <div className="py-5 text-white d-flex align-items-center justify-content-center flex-md-row flex-column-reverse ">
+              <div className="d-flex px-3 px-lg-5 footer justify-content-between justify-content-md-center gap-md-5">
+                <p>Home</p>
+                <p>About me</p>
+                <p className="d-md-none">My Skills</p>
+                <p className="d-md-none">Projects</p>
+              </div>
+              <div className="text-white mb-4  px-4 text-center  footer_name ">
                 <h2 className="ff_Uncial fs_2xl fw-normal">Joginder Saini</h2>
+              </div>
+              <div className="d-flex gap-5 align-items-center justify-content-center px-3 px-lg-5 d-none d-md-flex">
+                <p>My Skills</p>
+                <p>Projects</p>
               </div>
             </div>
           </div>

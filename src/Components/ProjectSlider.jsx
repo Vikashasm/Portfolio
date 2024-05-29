@@ -81,32 +81,32 @@ const ProjectSlider = () => {
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
 
-    // responsive: [
-    //   {
-    //     breakpoint: 1024,
-    //     settings: {
-    //       slidesToShow: 3,
-    //       slidesToScroll: 3,
-    //       infinite: true,
-    //       dots: false,
-    //     },
-    //   },
-    //   {
-    //     breakpoint: 600,
-    //     settings: {
-    //       slidesToShow: 2,
-    //       slidesToScroll: 2,
-    //       initialSlide: 2,
-    //     },
-    //   },
-    //   {
-    //     breakpoint: 480,
-    //     settings: {
-    //       slidesToShow: 1,
-    //       slidesToScroll: 1,
-    //     },
-    //   },
-    // ],
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: false,
+        },
+      },
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 650,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
 
   function SamplePrevArrow(props) {
@@ -144,17 +144,17 @@ const ProjectSlider = () => {
           const { title, img, stack, description } = item;
           return (
             <div className="text-white px-3  " key={index}>
-              <div className="card_bg  rounded-3 ">
+              <div className="card_bg  d-flex flex-column  rounded-3 ">
                 <div className="">
                   <img className="w-100 rounded-top-3" src={img} alt="" />
                 </div>
-                <div className="p-4">
+                <div className="px-2 px-sm-4 py-2 py-sm-4">
                   <h5 className="">{title}</h5>
                   <p>{description}</p>
                   <p className="mb-2">Stack Details</p>
                   <div className="d-flex gap-2 flex-wrap">
                     {stack.map((data, i) => (
-                      <p key={i}>{data}</p>
+                      <p className="mb-0 mb-md-3" key={i}>{data}</p>
                     ))}
                   </div>
                 </div>
