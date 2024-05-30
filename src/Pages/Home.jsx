@@ -33,7 +33,7 @@ const Home = () => {
       <section>
         <div className="hero  pt-5 ">
           <div className=""></div>
-          <div className="background pt-5 ">
+          <div className="background pt-5  ">
             <div className="container pt-2 pt-lg-5 ">
               <div className="d-flex flex-column-reverse flex-md-row align-items-center  justify-content-between ">
                 <div className="w-40 p-2 py-md-5 px-lg-5">
@@ -83,7 +83,7 @@ const Home = () => {
                     className="fs_3xl ff_Uncial text-center text-lg-start mb-5  pb-5 d-md-none"
                     style={{ color: "#720000" }}
                   >
-                  Saini
+                    Saini
                   </h1>
                   <div className="position-relative d-flex justify-content-center align-items-center  ">
                     <div className="w-100 overflow-hidden">
@@ -262,7 +262,7 @@ const Home = () => {
               </div>
             </div>
             <div className="col-10 col-md-6 col-lg-4">
-              <div className="border rounded-3 p-4 text-center">
+              <div className="border rounded-3 p-4 text-center my-3 ">
                 {" "}
                 <h4 className="skill_low_p">Backend Development</h4>
                 <p>

@@ -78,6 +78,9 @@ const ProjectSlider = () => {
     autoplaySpeed: 2000,
     cssEase: "linear",
     swipeToSlide: true,
+    centerMode: true,
+    centerPadding: "0px",
+  
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
 
@@ -138,13 +141,16 @@ const ProjectSlider = () => {
     );
   }
   return (
-    <div>
+    <div className="slider-container">
       <Slider {...settings}>
         {projectData.map((item, index) => {
           const { title, img, stack, description } = item;
           return (
-            <div className="text-white px-3  " key={index}>
-              <div className="card_bg  d-flex flex-column  rounded-3 ">
+           
+              <div
+                className="card_bg  d-flex flex-column text-white rounded-3 "
+                key={index}
+              >
                 <div className="">
                   <img className="w-100 rounded-top-3" src={img} alt="" />
                 </div>
@@ -154,12 +160,14 @@ const ProjectSlider = () => {
                   <p className="mb-2">Stack Details</p>
                   <div className="d-flex gap-2 flex-wrap">
                     {stack.map((data, i) => (
-                      <p className="mb-0 mb-md-3" key={i}>{data}</p>
+                      <p className="mb-0 mb-md-3" key={i}>
+                        {data}
+                      </p>
                     ))}
                   </div>
                 </div>
               </div>
-            </div>
+           
           );
         })}
       </Slider>
