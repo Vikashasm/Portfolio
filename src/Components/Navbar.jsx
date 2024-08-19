@@ -18,7 +18,7 @@ export const Navbar = () => {
                 }   d-md-flex justify-content-center align-items-center gap-5 text-white mb-0`}
               >
                 <li className="cursor-pointer hover_effect">Home</li>
-                <li className="cursor-pointer hover_effect">About me</li>
+                <li className="cursor-pointer hover_effect">About-me</li>
                 <li className="cursor-pointer hover_effect">My Skills</li>
                 <li className="cursor-pointer hover_effect">Projects</li>
                 <li className="d-md-none cursor-pointer hover_effect">
